@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Project 1</title>
+</head>
+<body>
+
+    <div class="hamburger">
+        
+        <label aria-controls="header" type="checkbox" id="toggle" class="toggle" aria-controls="header" onclick="toggle()" aria-expanded="false"  for="toggle">
+            <!-- <i class="fa-solid fa-bars"></i> -->
+            <img  src="./images/bars-solid.svg" alt="">
+        </label>
+
+    </div>
+
+    <header data-visible="false" id="header" class="header">
+
+        
+        
+        <a href="./navbar.html"><img src="./images/devnest-logo-2.png" alt="" height="100px"></a>
+        <nav>
+
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <a href="#"><button class="cta">Get Started</button></a>
+
+    </header>
+
+    <header data-visible="false" id="header" class="header-pc">
+
+        
+        
+        <a href="./navbar.html"><img src="./images/devnest-logo-2.png" alt="" height="100px"></a>
+        <nav>
+
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <a href="#"><button class="cta">Get Started</button></a>
+
+    </header>
+
+<script>
+        function toggle() {
+           
+  var x = document.getElementById("header");
+ 
+    if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else{
+    x.style.display = "none";
+  }
+  }
+
+</script>
+
+
+
+    <section id="banner">
+    <div class="banner">
+        <div>
+            <center>
+                <p>GET READY</p>
+                <hr> 
+                <h1>IT'S NOT ABOUT IDEAS <br> IT'S ABOUT MAKING <br> <span> IDEAS HAPPEN </span></h1>
+                <a href="#"><button class="btn-2">COUNTACT US</button></a>
+                <a href="#"><button class="btn-1">VIEW OUR PORTFOLIO</button></a>
+            </center>
+        </div>
+    </div>
+    </section>
+
+
+    
+    <section id="clutch">
+        <div class="col_1">
+            <h1>Featured on Clutch Top-Ranked List 2021</h1>
+            <p>Clutch ranked devnest developer of Pakistan - Devnest is a digital marketing agency, helping clients to build high-quality web development, graphic designing, and other services.</p>
+            <br>
+            <p>See what Clutch says about Devnest!</p>
+            <a href="#"><button class="btn-2">VIEW CASESTUDY</button></a>
+        </div>
+
+        <div>
+            <img src="./images/clutch.png" alt="">
+        </div>
+    </section>
+
+
+
+    <!-- <section id="solution">
+        <div></div>
+    </section> -->
+
+
+</body>
+</html>

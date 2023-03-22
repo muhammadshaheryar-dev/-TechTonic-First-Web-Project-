@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+*{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.hamburger img{
+    display: none;
+}
+
+.hamburger{
+    display: inline-block;
+    left: 5%;
+    top: 5%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+header{
+    background-color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position:  fixed;
+    width: 100%;
+    box-shadow: 0 0 20px 0 rgba(24,24,24,.1);
+}
+
+
+header img{
+    height: 70px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav ul li a{
+    color: black;
+    transition:  0.3s ease;
+    box-sizing: border-box;
+    padding: 13px 20px;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #8fb830;
+    text-decoration-thickness: 2px;
+    animation: ease-out;
+}
+
+nav ul li a:active{
+    background-color: white;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #8fb830;
+    text-decoration-thickness: 2px;
+    animation: ease-out;
+}
+
+.cta, .btn-1, .btn-2{
+    margin-left: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.2s ease-in-out; 
+}
+
+a button:hover{
+    box-shadow: 0 0 3px 3px #4e4e4e3a; 
+}
+
+
+
+
+
+.banner{
+    background-image: url(./images/Banner-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    /* z-index: 0;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.banner p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    padding: 22px;
+}
+
+.banner hr{
+    width: 90px;
+    border: 1px solid #fff;
+    margin-bottom: 22px;
+}
+
+.banner h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.5vw;
+    font-weight: 300;
+}
+
+.banner h1 span{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.5vw;
+    font-weight: 700;
+}
+
+.banner a button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 16px 28px;
+    margin-top: 35px;
+}
+
+.banner a .btn-2{
+    background-color: #a6e72a;
+    color: #000;
+}
+
+
+
+
+
+#clutch{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#clutch div{
+    /* padding: 100px; */
+    padding: 5vw;
+}
+
+#clutch .col_1{
+    flex-basis: 50%;
+}
+
+#clutch .col_1 h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.8vw;
+    padding-bottom: 30px;
+}
+
+#clutch .btn-2{
+    margin: 0;
+    margin-top: 30px;
+}
+
+
+
+
+/* #solution{
+    height: 700px;
+    background-color: #181818;
+} */
+
+
+.header{
+    display: none;
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1100px) {
+
+    .header-pc{
+        display: none;
+    }
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 60%;
+        background-color: #fff;
+        top: 0;
+        position: fixed;
+        text-align: center;
+        padding: 20px;
+        z-index: 0;
+    }
+
+    .check{
+        cursor: pointer;
+    }
+
+
+    header nav ul li{
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .hamburger img{
+        display: block;
+        height: 30px;
+    }
+
+    .hamburger{
+        display: flex;
+        left: 5%;
+        top: 5%;
+        position: fixed;
+        z-index: 1;
+    }
+    
+}
+
+
+
+
+
+@media (min-width: 481px) and (max-width: 768px){
+
+    .header-pc{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 60%;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        position: fixed;
+        text-align: center;
+        padding: 20px;
+        z-index: 0;
+    }
+
+
+    .toggle{
+        cursor: pointer;
+    }
+
+
+    header nav ul li{
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .hamburger img{
+        display: block;
+        height: 30px;
+        width: 30px;
+        background-image: url('./images/bars-solid.svg');
+        background-repeat: no-repeat;
+        background-color: #00000000;
+        border: 0;
+    }
+
+    .hamburger{
+        display: flex;
+        left: 5%;
+        top: 5%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .banner h1, .banner h1 span{
+        font-size: 6vw;
+    }
+
+    #clutch{
+        display: inline-block;
+    }
+    
+    #clutch div{
+        padding: 10vw 5vw;
+    }
+
+    #clutch .col_1 h1{
+        font-size: 6vw;
+    }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    
+    .header-pc{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 80%;
+        background-color: #fff;
+        top: 0;
+        position: fixed;
+        text-align: center;
+        padding: 20px;
+        z-index: 0;
+    }
+
+
+    header nav ul li{
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .hamburger img{
+        display: block;
+        height: 30px;
+    }
+
+    .hamburger{
+        display: flex;
+        left: 5%;
+        top: 5%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .banner h1, .banner h1 span{
+        font-size: 7vw;
+    }
+
+    .btn-1, .btn-2{
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .banner a button{
+        font-size: 12px;
+        display: block;
+        margin: 16px 0;
+        font-weight: 700;
+    }
+
+    #clutch{
+        display: inline-block;
+    }
+
+    #clutch div{
+        padding: 10vw 5vw;
+    }
+
+    #clutch .col_1 h1{
+        font-size: 9vw;
+    }
+}
+
