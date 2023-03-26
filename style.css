@@ -684,71 +684,95 @@ ul{
     margin-right: auto;
     border: 1px solid #79797931;
 }
-
-
-/* Our Professional */
-h1.heading{
-    color: rgb(0, 0, 0);
-    font-weight: 100;
-}
-
-h1.main-heading{
-
-    color: #75db18;
-    font-weight: bold;
-
-}
-p:hover,h1:hover, a:hover{
-    color: black;
-}
-
-.up_line{
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 2px;
-    color: #a6e72a;
-}
-*{
-    
-    font-family: "Raleway";
-   font-weight: 300;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    background-repeat: no-repeat;
-}
-.container{
-	max-width: 1170px;
-	margin:auto;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}
-.Mid{
-	background-color: #ffffff;
-    padding: 70px 0;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h2{
-	font-size: 25px;
-	color: #a6e72a;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-
-@media(max-width: 767px){
-    .footer-col{
-      width: 100%;
-      margin-bottom: 30px;
+.animation {
+    text-align: center; /* set text alignment to center */
   }
+  
+  .animation{
+    position: relative; /* make the text position relative */
+    animation: moveLeftToCenter 1.5s ease-in-out forwards; /* apply animation */
+  }
+  
+  @keyframes moveLeftToCenter {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  .solution-video{
+    position: relative;
+    animation: solutionvideo 1s ease-in-out forwards;
+  }
+  @keyframes solutionvideo {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0;
+    }
+}
+.solution-text{
+    position: relative;
+    animation: solutiontxt 1s ease-in-out forwards; 
+
+}
+@keyframes solutiontxt {
+    from {
+      right: -100%; 
+    }
+    to {
+      right: 0; 
+    }
+}
+.success_font{
+    position: relative; 
+    animation: success_font 1s ease-in-out forwards; 
+  }
+  @keyframes success_font {
+    from {
+      left: -100%; 
+    }
+    to {
+      left: 0; 
+    }
+}
+.success-para {
+    position: relative; 
+    animation: success-para 1s ease-in-out forwards; 
+
+}
+@keyframes success-para  {
+    from {
+      right: -100%;
+    }
+    to {
+      right: 0; 
+    }
+}
+.img_clutch {
+    position: relative; 
+    animation: success-para 1s ease-in-out forwards; 
+
+}
+@keyframes img_clutch {
+    from {
+      right: -100%;
+    }
+    to {
+      right: 0; 
+    }
+}
+.clutch_txt{
+    position: relative; 
+    animation: success_font 1s ease-in-out forwards; 
+  }
+  @keyframes clutch_txt {
+    from {
+      left: -100%; 
+    }
+    to {
+      left: 0; 
+    }
 }
