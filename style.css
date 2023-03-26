@@ -84,12 +84,13 @@ a button:hover{
     background-size: cover;
     background-position: center;
     height: 800px;
-    /* z-index: 0;  */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
+    overflow: hidden;
 }
+
+
 
 .banner p{
     font-family: 'Raleway', sans-serif;
@@ -141,13 +142,14 @@ a button:hover{
 }
 
 #clutch div{
-    /* padding: 100px; */
     padding: 5vw;
 }
 
 #clutch .col_1{
     flex-basis: 50%;
 }
+
+
 
 #clutch .col_1 h1{
     font-family: 'Raleway', sans-serif;
@@ -683,96 +685,4 @@ ul{
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #79797931;
-}
-.animation {
-    text-align: center; /* set text alignment to center */
-  }
-  
-  .animation{
-    position: relative; /* make the text position relative */
-    animation: moveLeftToCenter 1.5s ease-in-out forwards; /* apply animation */
-  }
-  
-  @keyframes moveLeftToCenter {
-    from {
-      left: -100%;
-    }
-    to {
-      left: 0;
-    }
-  }
-  .solution-video{
-    position: relative;
-    animation: solutionvideo 1s ease-in-out forwards;
-  }
-  @keyframes solutionvideo {
-    from {
-      left: -100%;
-    }
-    to {
-      left: 0;
-    }
-}
-.solution-text{
-    position: relative;
-    animation: solutiontxt 1s ease-in-out forwards; 
-
-}
-@keyframes solutiontxt {
-    from {
-      right: -100%; 
-    }
-    to {
-      right: 0; 
-    }
-}
-.success_font{
-    position: relative; 
-    animation: success_font 1s ease-in-out forwards; 
-  }
-  @keyframes success_font {
-    from {
-      left: -100%; 
-    }
-    to {
-      left: 0; 
-    }
-}
-.success-para {
-    position: relative; 
-    animation: success-para 1s ease-in-out forwards; 
-
-}
-@keyframes success-para  {
-    from {
-      right: -100%;
-    }
-    to {
-      right: 0; 
-    }
-}
-.img_clutch {
-    position: relative; 
-    animation: success-para 1s ease-in-out forwards; 
-
-}
-@keyframes img_clutch {
-    from {
-      right: -100%;
-    }
-    to {
-      right: 0; 
-    }
-}
-.clutch_txt{
-    position: relative; 
-    animation: success_font 1s ease-in-out forwards; 
-  }
-  @keyframes clutch_txt {
-    from {
-      left: -100%; 
-    }
-    to {
-      left: 0; 
-    }
 }
